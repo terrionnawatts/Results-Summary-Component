@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+body {
+    background-color: #fff;
+    font-family: 'Hanken Grotesk', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: hsl(0, 0, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    flex-direction: row;
+    box-shadow: 5px 5px 10px hsl(221, 100%, 96%);
+}
+
+.left {
+    background-color: hsl(241, 81%, 54%);
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 30px;
+    margin: 0;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.comments {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3 {
+    color: #fff;
+    font-size: 30px;
+}
+
+h4 {
+    color: hsl(241, 100%, 89%);
+    font-size: 24px;
+}
+
+.score {
+    border: none;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.big-score {
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+}
+
+.small-score {
+    font-size: 18px;
+    color: hsl(241, 100%, 89%)
+}
+
+p {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+}
+
+button {
+    color: #fff;
+    font-size: 16px;
+    background-color: hsl(224, 30%, 27%);
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 1));
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reaction-cat {
+    color: hsl(0, 100%, 67%);
+    background-color: hsl(0, 100%, 67%, 0.1);
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+    border-radius: 10px;
+    width: 225px;
+    margin: 10px 0;
+}
+
+.memory-cat {
+    color: hsla(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+    border-radius: 10px;
+    width: 225px;
+    margin: 10px 0;
+}
+
+.verbal-cat {
+    color: hsl(166, 100%, 37%);
+    background-color: hsl(166, 100%, 37%, 0.1);
+    border: none;
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+    border-radius: 10px;
+    width: 225px;
+    margin: 10px 0;
+}
+
+.visual-cat {
+    color: hsl(234, 85%, 45%);
+    background-color: hsl(234, 85%, 45%, 0.1);
+    border: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    width: 225px;
+    margin: 10px 0;
+}
+
+span {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.black-text {
+    color: black;
+    margin-left: 50px; 
+    padding-right: 5px; 
+}
+
+.grey-text {
+    color: hsl(224, 30%, 27%, 0.2);
+}
+
+.summary {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+@media (min-width: 375px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .right {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
